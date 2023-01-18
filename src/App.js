@@ -11,6 +11,7 @@ import AboutUs from "./pages/aboutus";
 import ContactUs from "./pages/contactus";
 
 import awsExports from './aws-exports';
+import CocktailFinder from './pages/Cocktail';
 Amplify.configure(awsExports);
 
 function App({signOut}) {
@@ -22,11 +23,16 @@ function App({signOut}) {
         <Route index element={<Home />} />
         <Route path="aboutus" element={<AboutUs />} />
         <Route path="contact" element={<ContactUs />} />
+        <Route path="cocktail" element={<CocktailFinder />} />
       </Route>
     </Routes>
   </BrowserRouter>
   </div>
+
+  
 )
 }
+
+
 
 export default withAuthenticator(App);

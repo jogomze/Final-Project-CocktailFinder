@@ -19,6 +19,10 @@ function Navbar() {
         
         <h1 className="active">
         <Link to="/contact">Contact Us</Link>
+        </h1>
+
+        <h1 className="active">
+        <Link to="/cocktail">search by ingredient</Link>
         
         </h1>
         
